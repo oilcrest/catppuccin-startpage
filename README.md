@@ -1,60 +1,80 @@
-<div align="center">
-    <a href="https://github.com/volopivoshenko/catppuccin-startpage">
-        <img alt="logo" src="https://github.com/volopivoshenko/catppuccin-startpage/blob/main/docs/static/assets/page.png?raw=True" height=400>
-    </a>
-</div>
+<h3 align="center">
+  <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
+  <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
+  Catppuccin <a href="https://github.com/pivoshenko/catppuccin-startpage">Startpage</a>
+  <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
+</h3>
+
 <p align="center">
-    <a href="https://www.buymeacoffee.com/volopivoshenko" target="_blank">
-        <img alt="buymeacoffee" src="https://img.shields.io/badge/buy_me_-a_coffee-ff6964?logo=buymeacoffee">
-    </a>
-    <a href="https://stand-with-ukraine.pp.ua/">
-        <img alt="standwithukraine" src="https://img.shields.io/badge/Support-Ukraine-FFD500?style=flat&labelColor=005BBB">
-    </a>
-    <a href="https://stand-with-ukraine.pp.ua">
-        <img alt="standwithukraine" src="https://img.shields.io/badge/made_in-Ukraine-ffd700.svg?labelColor=0057b7">
-    </a>
-    <a href="https://wakatime.com/badge/user/9862508c-0a86-427a-929c-46186f2d191a/project/6f149575-e390-48f9-9b7a-fd557bda4a6a">
-        <img src="https://wakatime.com/badge/user/9862508c-0a86-427a-929c-46186f2d191a/project/6f149575-e390-48f9-9b7a-fd557bda4a6a.svg" alt="wakatime">
-    </a>
+  <a href="https://github.com/pivoshenko/catppuccin-startpage/stargazers">
+    <img src="https://img.shields.io/github/stars/pivoshenko/catppuccin-startpage?style=for-the-badge&logo=starship&color=a6e3a1&logoColor=D9E0EE&labelColor=302D41">
+  </a>
+  <a href="https://github.com/pivoshenko/catppuccin-startpage/issues">
+    <img src="https://img.shields.io/github/issues/pivoshenko/catppuccin-startpage?style=for-the-badge&logo=gitbook&color=fab387&logoColor=D9E0EE&labelColor=302D41">
+  </a>
+  <a href="https://github.com/pivoshenko/catppuccin-startpage/contributors">
+    <img src="https://img.shields.io/github/contributors/pivoshenko/catppuccin-startpage?style=for-the-badge&logo=github&color=f38ba8&logoColor=D9E0EE&labelColor=302D41">
+  </a>
 </p>
 
-- [🔮 Overview](#-overview)
-- [️⌨️ Keybindings](#️️-keybindings)
-- [⚙️ Configuration Dialog](#️-configuration-dialog)
-- [🔍 Search Dialog](#-search-dialog)
-- [🖼 Available banners](#-available-banners)
+https://github.com/pivoshenko/catppuccin-startpage/assets/40499728/d96c8bd6-168e-408f-b4f0-0e339569c696
 
-## 🔮 Overview
+> [!NOTE]
+>  A live demo can be found [here](https://pivoshenko.github.io/catppuccin-startpage)
 
-This start page is based on the [dawn](https://github.com/b-coimbra/dawn) and [tartarus-startpage](https://github.com/AllJavi/tartarus-startpage), which has even more functionality.
-I've tweaked the page's style a bit to match [catppuccin] style.
+## Overview
 
-## ️⌨️ Keybindings
+Aesthetic and clean startpage in [**Catppuccin Mocha**](https://catppuccin.com/palette) style, hosted on GitHub Pages. This start page is based on the [`dawn`] and [`tartarus-startpage`], which has even more functionality.
+I've tweaked the page's style to match [Catppuccin] palette and my [`dotfiles`].
 
-| Hotkey                                                         | Action        |
-| -------------------------------------------------------------- | ------------- |
-| <kbd>Numrow</kbd> \| <kbd>MouseWheel</kbd> \| <kbd>Click</kbd> | Switch tabs   |
-| <kbd>s</kbd>                                                   | Search Dialog |
-| <kbd>Esc</kbd>                                                 | Close Dialogs |
+### Main principles
 
-## ⚙️ Configuration Dialog
+- Minimalism in everything
+- Consistency
+- Simplicity
+- One style
+- Reduced visual noise
 
-The default configuration file is [userconfig.js](userconfig.js), but you can change it in the configuration dialog. You can find more information about how the file works in the [original repository](https://github.com/b-coimbra/dawn). The available components are tabs, a clock, and weather.
+## Usage
 
-Additionally, there's a new option called `fastlink` to set the link of the Pokéball button.
+1. Create your own repository for the startpage and clone it
+2. Clone this repository with:
 
-## 🔍 Search Dialog
+```shell
+git clone https://github.com/pivoshenko/catppuccin-startpage.git pivoshenko-catppuccin-startpage
+```
 
-The search dialog allows you to display a search bar with various search engines defined in the configuration. To select each one, you simply need to prefix the query with the corresponding `!<id>`.
+3. Copy the assets and configs from `pivoshenko-catppuccin-startpage` to your repository:
 
-By default, the defined search engines are:
-- `!g`: google
-- `!d`: duckduckgo
-- `!y`: youtube
-- `!r`: reddit
-- `!p`: pinterest
+```shell
+cp pivoshenko-catppuccin-startpage/* <YOUR REPOSITORY>
+```
 
-## 🖼 Available banners
+4. Remove `.github` directory as it contains only PR templates, issue labels etc that are linked to this repository
+5. Update [`userconfig.js`]:
+   - Set your location for the weather widget
+   - Update the number of pages and their banners
+   - Update bookmarks and quick links for the one you are using the most :3
+
+> [!TIP]
+> You can find icons for your bookmarks using [`tabler-icons`]
+>
+> If you want to reduce the loading time of the icons, you could install the icon [font] locally and activate the option `"localIcons": true` in the config to disable the remote styles
+
+#### As Homepage
+
+- Click the menu button and select `Options/Preferences`
+- Click the home panel
+- Click the menu next to the homepage and new windows and choose to show custom URLs and add your GitHub Pages link
+
+#### As New Tab
+
+You can use different Add-ons/Extensions for it
+- If you use Firefox: [Custom New Tab Page](https://addons.mozilla.org/en-US/firefox/addon/custom-new-tab-page/?src=search) and make sure you enable "Force links to open in the top frame (experimental)" in the extension's preferences page
+- If you use Chromium (Brave, Chrome): [Custom New Tab URL](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia)
+
+
+### Available banners
 
 | cbg-2                                           | cbg-3                                           | cbg-4                                           | cbg-5                                           |
 | ----------------------------------------------- | ----------------------------------------------- | ----------------------------------------------- | ----------------------------------------------- |
@@ -69,6 +89,10 @@ By default, the defined search engines are:
 | <img src="src/img/banners/cbg-10.gif" width=175> | <img src="src/img/banners/cbg-11.gif" width=175> | <img src="src/img/banners/cbg-12.gif" width=175> | <img src="src/img/banners/cbg-13.gif" width=175> |
 
 
-[dawn]: https://github.com/b-coimbra/dawn
-[catppuccin]: https://github.com/catppuccin/catppuccin
-[tartarus-startpage]:https://github.com/AllJavi/tartarus-startpage
+[`dawn`]: https://github.com/b-coimbra/dawn
+[Catppuccin]: https://github.com/catppuccin/catppuccin
+[`tartarus-startpage`]:https://github.com/AllJavi/tartarus-startpage
+[`dotfiles`]: https://github.com/pivoshenko/dotfiles
+[`userconfig.js`]: userconfig.js
+[`tabler-icons`]: https://tabler.io/icons
+[font]: src/fonts
